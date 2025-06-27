@@ -55,9 +55,9 @@
             <ul class="navbar-nav">
               <li class="nav-item mr-4"><a class="nav-link" href="index.html">Inicio</a></li>
               <li class="nav-item mr-4"><a class="nav-link" href="shop.html">Productos</a></li>
-              <li class="nav-item mr-4 active"><a class="nav-link" href="about.html">Prescripciones</a></li>
-              <li class="nav-item mr-4"><a class="nav-link" href="Preguntas.html">Preguntas frecuentes</a></li>
-              <li class="nav-item "><a class="nav-link" href="contact.html">Contacto</a></li>
+              <li class="nav-item mr-4"><a class="nav-link" href="about.html">Prescripciones</a></li>
+              <li class="nav-item mr-4 active"><a class="nav-link" href="Preguntas.html">Preguntas frecuentes</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
             </ul>
           </div>
         </div>
@@ -69,123 +69,105 @@
         <div class="row">
           <div class="col-md-12 mb-0">
             <a href="index.html">Inicio</a> <span class="mx-2 mb-0">/</span>
-            <strong class="text-black">Contacto</strong>
+            <strong class="text-black">Preguntas frecuentes</strong>
           </div>
         </div>
       </div>
     </div>
 
-    <section class="site-section bg-white" id="nuestro-proceso">
+
+    <section class="site-section bg-white" id="faq-farmacia">
       <div class="container">
         <div class="text-center mb-5">
-          <h2 class="text-success font-weight-bold">Nuestro proceso es sencillo</h2>
-          <p class="lead text-muted">En La Farma CR hacemos que recibir tus medicamentos sea fácil, rápido y seguro.</p>
+          <h2 class="text-success font-weight-bold">Preguntas Frecuentes</h2>
+          <p class="lead text-muted">Respondemos tus dudas más comunes sobre nuestros servicios.</p>
         </div>
     
-        <div class="row position-relative justify-content-between align-items-start">
+        <div class="accordion" id="faqAccordion">
     
-          <!-- Línea central -->
-          <div class="position-absolute w-100" style="top: 50px; height: 4px; background-color: #00a86b; z-index: 0;"></div>
-    
-          <!-- Paso 1 -->
-          <div class="col-md-3 text-center position-relative mb-5">
-            <div class="mx-auto mb-3 bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px; font-size: 24px; z-index: 1; position: relative;">
-              1
+          <!-- Pregunta 1 -->
+          <div class="card mb-3 border-0 shadow-sm">
+            <div class="card-header bg-success text-white" id="faq1">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-white text-left w-100" type="button" data-toggle="collapse" data-target="#respuesta1" aria-expanded="true" aria-controls="respuesta1">
+                  1. ¿Se requiere de receta?
+                </button>
+              </h5>
             </div>
-            <h5 class="text-success font-weight-bold">Enviá tu prescripción</h5>
-            <p class="text-muted">Transferí tu receta o pedile a tu médico que nos la envíe directamente.</p>
+            <div id="respuesta1" class="collapse show" aria-labelledby="faq1" data-parent="#faqAccordion">
+              <div class="card-body">
+                Sí, algunos medicamentos requieren receta médica para su dispensación, especialmente si están regulados por ley. Si tenés dudas, escribinos y con gusto te asesoramos.
+              </div>
+            </div>
           </div>
     
-          <!-- Paso 2 -->
-          <div class="col-md-3 text-center position-relative mb-5">
-            <div class="mx-auto mb-3 bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px; font-size: 24px; z-index: 1; position: relative;">
-              2
+          <!-- Pregunta 2 -->
+          <div class="card mb-3 border-0 shadow-sm">
+            <div class="card-header bg-success text-white" id="faq2">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-white text-left w-100 collapsed" type="button" data-toggle="collapse" data-target="#respuesta2" aria-expanded="false" aria-controls="respuesta2">
+                  2. ¿Los medicamentos son de entrega inmediata?
+                </button>
+              </h5>
             </div>
-            <h5 class="text-success font-weight-bold">La preparamos</h5>
-            <p class="text-muted">Alistamos o elaboramos tu medicamento según tus necesidades.</p>
+            <div id="respuesta2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion">
+              <div class="card-body">
+                Los medicamentos disponibles en stock pueden ser entregados el mismo día. Las fórmulas magistrales o preparaciones especiales pueden requerir más tiempo.
+              </div>
+            </div>
           </div>
     
-          <!-- Paso 3 -->
-          <div class="col-md-3 text-center position-relative mb-5">
-            <div class="mx-auto mb-3 bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px; font-size: 24px; z-index: 1; position: relative;">
-              3
+          <!-- Pregunta 3 -->
+          <div class="card mb-3 border-0 shadow-sm">
+            <div class="card-header bg-success text-white" id="faq3">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-white text-left w-100 collapsed" type="button" data-toggle="collapse" data-target="#respuesta3" aria-expanded="false" aria-controls="respuesta3">
+                  3. ¿Cuál es el tiempo de preparación?
+                </button>
+              </h5>
             </div>
-            <h5 class="text-success font-weight-bold">Recibí tu medicina</h5>
-            <p class="text-muted">Enviamos tu receta en un empaque discreto y seguro, directo a tu casa.</p>
+            <div id="respuesta3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
+              <div class="card-body">
+                Las prescripciones magistrales pueden tardar entre 24 y 48 horas, dependiendo del tipo de preparación. Siempre te notificaremos el estado de tu pedido.
+              </div>
+            </div>
           </div>
     
-          <!-- Paso 4 -->
-          <div class="col-md-3 text-center position-relative mb-5">
-            <div class="mx-auto mb-3 bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px; font-size: 24px; z-index: 1; position: relative;">
-              4
+          <!-- Pregunta 4 -->
+          <div class="card mb-3 border-0 shadow-sm">
+            <div class="card-header bg-success text-white" id="faq4">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-white text-left w-100 collapsed" type="button" data-toggle="collapse" data-target="#respuesta4" aria-expanded="false" aria-controls="respuesta4">
+                  4. ¿Hacen entregas a todo el país?
+                </button>
+              </h5>
             </div>
-            <h5 class="text-success font-weight-bold">Activá Recarga Automática</h5>
-            <p class="text-muted">Registrate para que tus medicamentos lleguen automáticamente, sin preocupaciones.</p>
+            <div id="respuesta4" class="collapse" aria-labelledby="faq4" data-parent="#faqAccordion">
+              <div class="card-body">
+                Sí, realizamos envíos a todo Costa Rica mediante servicios de mensajería certificados. Confirmá disponibilidad y tiempos según tu zona.
+              </div>
+            </div>
+          </div>
+    
+          <!-- Pregunta 5 -->
+          <div class="card mb-3 border-0 shadow-sm">
+            <div class="card-header bg-success text-white" id="faq5">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-white text-left w-100 collapsed" type="button" data-toggle="collapse" data-target="#respuesta5" aria-expanded="false" aria-controls="respuesta5">
+                  5. ¿Cuáles son los métodos de pago?
+                </button>
+              </h5>
+            </div>
+            <div id="respuesta5" class="collapse" aria-labelledby="faq5" data-parent="#faqAccordion">
+              <div class="card-body">
+                Aceptamos pagos mediante SINPE Móvil, transferencia bancaria, tarjetas de crédito/débito y pagos contra entrega en zonas seleccionadas.
+              </div>
+            </div>
           </div>
     
         </div>
       </div>
     </section>
-
-
-    <section class="site-section bg-light" id="formulario-prescripcion">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="text-success font-weight-bold">Formulario de Prescripción Magistral</h2>
-          <p class="lead text-muted">Completá la información para procesar la receta del paciente.</p>
-        </div>
-    
-        <form action="#" method="post" class="bg-white p-4 rounded shadow-sm">
-    
-          <div class="form-row">
-            <!-- Nombre del paciente -->
-            <div class="form-group col-md-6">
-              <label for="nombrePaciente" class="font-weight-bold text-success">Nombre del paciente</label>
-              <input type="text" class="form-control" id="nombrePaciente" name="nombrePaciente" placeholder="Ej. Juan Pérez" required>
-            </div>
-    
-            <!-- Fecha -->
-            <div class="form-group col-md-6">
-              <label for="fecha" class="font-weight-bold text-success">Fecha</label>
-              <input type="date" class="form-control" id="fecha" name="fecha" required>
-            </div>
-          </div>
-    
-          <!-- Prescripción -->
-          <div class="form-group">
-            <label for="prescripcion" class="font-weight-bold text-success">Prescripción magistral</label>
-            <textarea class="form-control" id="prescripcion" name="prescripcion" rows="5" placeholder="Describa la fórmula, dosis, frecuencia, vía de administración, etc." required></textarea>
-          </div>
-    
-          <div class="form-row">
-            <!-- Nombre del médico -->
-            <div class="form-group col-md-4">
-              <label for="nombreMedico" class="font-weight-bold text-success">Nombre del médico</label>
-              <input type="text" class="form-control" id="nombreMedico" name="nombreMedico" placeholder="Ej. Dra. María Soto" required>
-            </div>
-    
-            <!-- Código del médico -->
-            <div class="form-group col-md-4">
-              <label for="codigoMedico" class="font-weight-bold text-success">Código profesional</label>
-              <input type="text" class="form-control" id="codigoMedico" name="codigoMedico" placeholder="Ej. MP-123456" required>
-            </div>
-    
-            <!-- Firma o sello -->
-            <div class="form-group col-md-4">
-              <label for="firma" class="font-weight-bold text-success">Firma o sello</label>
-              <input type="file" class="form-control-file" id="firma" name="firma" accept="image/*">
-            </div>
-          </div>
-    
-          <div class="text-center">
-            <button type="submit" class="btn btn-success px-5 py-2 mt-3 font-weight-bold">Enviar prescripción</button>
-          </div>
-    
-        </form>
-      </div>
-    </section>
-
-
 
     <footer class="site-footer bg-light">
       <div class="container">
