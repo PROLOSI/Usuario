@@ -82,13 +82,10 @@
       <p class="lead text-muted">En La Farma CR hacemos que recibir tus medicamentos sea fácil, rápido y seguro.</p>
     </div>
 
-    <div class="row justify-content-between align-items-start position-relative">
-
-      <!-- Línea horizontal solo en escritorio -->
-      <div class="d-none d-md-block position-absolute w-100" style="top: 50px; height: 4px; background-color: #00a86b; z-index: 0;"></div>
+    <div class="row justify-content-between align-items-start text-center">
 
       <!-- PASO 1 -->
-      <div class="col-md-3 text-center position-relative mb-5">
+      <div class="col-12 col-md-3 position-relative mb-4 mb-md-0">
         <div class="mx-auto mb-3 bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
              style="width: 70px; height: 70px; font-size: 24px;">
           1
@@ -96,12 +93,13 @@
         <h5 class="text-success font-weight-bold">Enviá tu prescripción</h5>
         <p class="text-muted">Transferí tu receta o pedile a tu médico que nos la envíe directamente.</p>
 
-        <!-- Flecha ↓ solo móvil -->
-        <div class="d-md-none mt-2 mb-2 arrow-down animate-bounce">↓</div>
+        <!-- Flecha ↓ en móvil y escritorio -->
+        <div class="arrow-down animate-bounce d-block d-md-none mt-2 mb-2">↓</div>
+        <div class="arrow-right d-none d-md-block mt-3" style="font-size: 32px; color: #00a86b;">➜</div>
       </div>
 
       <!-- PASO 2 -->
-      <div class="col-md-3 text-center position-relative mb-5">
+      <div class="col-12 col-md-3 position-relative mb-4 mb-md-0">
         <div class="mx-auto mb-3 bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
              style="width: 70px; height: 70px; font-size: 24px;">
           2
@@ -109,11 +107,12 @@
         <h5 class="text-success font-weight-bold">La preparamos</h5>
         <p class="text-muted">Alistamos o elaboramos tu medicamento según tus necesidades.</p>
 
-        <div class="d-md-none mt-2 mb-2 arrow-down animate-bounce">↓</div>
+        <div class="arrow-down animate-bounce d-block d-md-none mt-2 mb-2">↓</div>
+        <div class="arrow-right d-none d-md-block mt-3" style="font-size: 32px; color: #00a86b;">➜</div>
       </div>
 
       <!-- PASO 3 -->
-      <div class="col-md-3 text-center position-relative mb-5">
+      <div class="col-12 col-md-3 position-relative mb-4 mb-md-0">
         <div class="mx-auto mb-3 bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
              style="width: 70px; height: 70px; font-size: 24px;">
           3
@@ -121,11 +120,12 @@
         <h5 class="text-success font-weight-bold">Recibí tu medicina</h5>
         <p class="text-muted">Enviamos tu receta en un empaque discreto y seguro, directo a tu casa.</p>
 
-        <div class="d-md-none mt-2 mb-2 arrow-down animate-bounce">↓</div>
+        <div class="arrow-down animate-bounce d-block d-md-none mt-2 mb-2">↓</div>
+        <div class="arrow-right d-none d-md-block mt-3" style="font-size: 32px; color: #00a86b;">➜</div>
       </div>
 
       <!-- PASO 4 -->
-      <div class="col-md-3 text-center position-relative mb-5">
+      <div class="col-12 col-md-3 position-relative mb-4">
         <div class="mx-auto mb-3 bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
              style="width: 70px; height: 70px; font-size: 24px;">
           4
@@ -264,6 +264,11 @@
   font-weight: 700; /* opcional: si quieres que sea en negrita */
 }
   .arrow-down {
+    font-size: 32px;
+    color: #00a86b;
+  }
+
+  .arrow-right {
     font-size: 32px;
     color: #00a86b;
   }
