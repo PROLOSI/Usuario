@@ -293,6 +293,25 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
+  <script>
+  $(document).ready(function() {
+    // Cuando se haga clic en un enlace del menú, se cierra el collapse
+    $('.navbar-nav a').on('click', function() {
+      if($('.navbar-toggler').is(':visible')) {  // Solo en móvil
+        $('.navbar-collapse').collapse('hide');
+      }
+    });
+
+    // Opcional: cerrar menú al hacer clic fuera del navbar cuando esté abierto
+    $(document).click(function(event) {
+      var clickover = $(event.target);
+      var _opened = $(".navbar-collapse").hasClass("show");
+      if (_opened === true && !clickover.hasClass("navbar-toggler") && !clickover.closest('.navbar-collapse').length) {
+        $(".navbar-collapse").collapse('hide');
+      }
+    });
+  });
+</script>
 
 </body>
 
