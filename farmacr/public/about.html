@@ -75,7 +75,7 @@
       </div>
     </div>
 
-    <section class="site-section bg-white" id="nuestro-proceso">
+<section class="site-section bg-white" id="nuestro-proceso">
   <div class="container">
     <div class="text-center mb-5">
       <h2 class="text-success font-weight-bold">Nuestro proceso es sencillo</h2>
@@ -89,38 +89,45 @@
 
       <!-- PASO 1 -->
       <div class="col-md-3 text-center position-relative mb-5">
-        <div class="mx-auto mb-3 bg-success text-white rounded-circle d-flex align-items-center justify-content-center" 
-             style="width: 70px; height: 70px; font-size: 24px; z-index: 1;">
+        <div class="mx-auto mb-3 bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
+             style="width: 70px; height: 70px; font-size: 24px;">
           1
         </div>
         <h5 class="text-success font-weight-bold">Enviá tu prescripción</h5>
         <p class="text-muted">Transferí tu receta o pedile a tu médico que nos la envíe directamente.</p>
+
+        <!-- Flecha ↓ solo móvil -->
+        <div class="d-md-none mt-2 mb-2 arrow-down animate-bounce">↓</div>
       </div>
 
       <!-- PASO 2 -->
       <div class="col-md-3 text-center position-relative mb-5">
-        <div class="mx-auto mb-3 bg-success text-white rounded-circle d-flex align-items-center justify-content-center" 
-             style="width: 70px; height: 70px; font-size: 24px; z-index: 1;">
+        <div class="mx-auto mb-3 bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
+             style="width: 70px; height: 70px; font-size: 24px;">
           2
         </div>
         <h5 class="text-success font-weight-bold">La preparamos</h5>
         <p class="text-muted">Alistamos o elaboramos tu medicamento según tus necesidades.</p>
+
+        <div class="d-md-none mt-2 mb-2 arrow-down animate-bounce">↓</div>
       </div>
 
       <!-- PASO 3 -->
       <div class="col-md-3 text-center position-relative mb-5">
-        <div class="mx-auto mb-3 bg-success text-white rounded-circle d-flex align-items-center justify-content-center" 
-             style="width: 70px; height: 70px; font-size: 24px; z-index: 1;">
+        <div class="mx-auto mb-3 bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
+             style="width: 70px; height: 70px; font-size: 24px;">
           3
         </div>
         <h5 class="text-success font-weight-bold">Recibí tu medicina</h5>
         <p class="text-muted">Enviamos tu receta en un empaque discreto y seguro, directo a tu casa.</p>
+
+        <div class="d-md-none mt-2 mb-2 arrow-down animate-bounce">↓</div>
       </div>
 
       <!-- PASO 4 -->
       <div class="col-md-3 text-center position-relative mb-5">
-        <div class="mx-auto mb-3 bg-success text-white rounded-circle d-flex align-items-center justify-content-center" 
-             style="width: 70px; height: 70px; font-size: 24px; z-index: 1;">
+        <div class="mx-auto mb-3 bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
+             style="width: 70px; height: 70px; font-size: 24px;">
           4
         </div>
         <h5 class="text-success font-weight-bold">Activá Recarga Automática</h5>
@@ -255,6 +262,24 @@
 <style>.nav-item.active .nav-link {
   color: #212529; /* un tono oscuro, puedes elegir otro */
   font-weight: 700; /* opcional: si quieres que sea en negrita */
-}</style>
+}
+  .arrow-down {
+    font-size: 32px;
+    color: #00a86b;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+  }
+
+  .animate-bounce {
+    animation: bounce 1.2s infinite;
+  }
+</style>
 
 </html>
