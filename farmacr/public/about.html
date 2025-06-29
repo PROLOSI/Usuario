@@ -82,12 +82,14 @@
       <p class="lead text-muted">En La Farma CR hacemos que recibir tus medicamentos sea fácil, rápido y seguro.</p>
     </div>
 
-    <!-- MÓVIL: pasos en columna -->
+    <!-- MÓVIL -->
     <div class="d-md-none">
       <!-- Paso 1 -->
       <div class="text-center mb-4">
         <div class="step-circle">1</div>
-        <div class="arrow-down animate-bounce">↓</div>
+        <div class="arrow-down animate-bounce">
+          <svg width="24" height="24" fill="#00a86b" viewBox="0 0 24 24"><path d="M12 21l-8-8h6V3h4v10h6z"/></svg>
+        </div>
         <h5 class="text-success font-weight-bold mt-3">Enviá tu prescripción</h5>
         <p class="text-muted">Transferí tu receta o pedile a tu médico que nos la envíe directamente.</p>
       </div>
@@ -95,7 +97,9 @@
       <!-- Paso 2 -->
       <div class="text-center mb-4">
         <div class="step-circle">2</div>
-        <div class="arrow-down animate-bounce">↓</div>
+        <div class="arrow-down animate-bounce">
+          <svg width="24" height="24" fill="#00a86b" viewBox="0 0 24 24"><path d="M12 21l-8-8h6V3h4v10h6z"/></svg>
+        </div>
         <h5 class="text-success font-weight-bold mt-3">La preparamos</h5>
         <p class="text-muted">Alistamos o elaboramos tu medicamento según tus necesidades.</p>
       </div>
@@ -103,7 +107,9 @@
       <!-- Paso 3 -->
       <div class="text-center mb-4">
         <div class="step-circle">3</div>
-        <div class="arrow-down animate-bounce">↓</div>
+        <div class="arrow-down animate-bounce">
+          <svg width="24" height="24" fill="#00a86b" viewBox="0 0 24 24"><path d="M12 21l-8-8h6V3h4v10h6z"/></svg>
+        </div>
         <h5 class="text-success font-weight-bold mt-3">Recibí tu medicina</h5>
         <p class="text-muted">Enviamos tu receta en un empaque discreto y seguro, directo a tu casa.</p>
       </div>
@@ -116,7 +122,7 @@
       </div>
     </div>
 
-    <!-- ESCRITORIO: pasos en fila con flechas entre círculos -->
+    <!-- ESCRITORIO -->
     <div class="d-none d-md-flex justify-content-between align-items-center text-center">
       <!-- Paso 1 -->
       <div class="col-md-2">
@@ -125,9 +131,11 @@
         <p class="text-muted">Transferí tu receta o pedile a tu médico que nos la envíe directamente.</p>
       </div>
 
-      <!-- Flecha -->
+      <!-- Flecha horizontal -->
       <div class="col-md-1">
-        <div class="arrow-right animate-bounce-desktop">➜</div>
+        <div class="arrow-right animate-bounce-desktop">
+          <svg width="36" height="36" fill="#00a86b" viewBox="0 0 24 24"><path d="M13 5l7 7-7 7v-4H4v-6h9z"/></svg>
+        </div>
       </div>
 
       <!-- Paso 2 -->
@@ -137,9 +145,10 @@
         <p class="text-muted">Alistamos o elaboramos tu medicamento según tus necesidades.</p>
       </div>
 
-      <!-- Flecha -->
       <div class="col-md-1">
-        <div class="arrow-right animate-bounce-desktop">➜</div>
+        <div class="arrow-right animate-bounce-desktop">
+          <svg width="36" height="36" fill="#00a86b" viewBox="0 0 24 24"><path d="M13 5l7 7-7 7v-4H4v-6h9z"/></svg>
+        </div>
       </div>
 
       <!-- Paso 3 -->
@@ -149,9 +158,10 @@
         <p class="text-muted">Enviamos tu receta en un empaque discreto y seguro, directo a tu casa.</p>
       </div>
 
-      <!-- Flecha -->
       <div class="col-md-1">
-        <div class="arrow-right animate-bounce-desktop">➜</div>
+        <div class="arrow-right animate-bounce-desktop">
+          <svg width="36" height="36" fill="#00a86b" viewBox="0 0 24 24"><path d="M13 5l7 7-7 7v-4H4v-6h9z"/></svg>
+        </div>
       </div>
 
       <!-- Paso 4 -->
@@ -291,7 +301,7 @@
   color: #212529; /* un tono oscuro, puedes elegir otro */
   font-weight: 700; /* opcional: si quieres que sea en negrita */
 }
-   .step-circle {
+.step-circle {
     margin: 0 auto;
     width: 70px;
     height: 70px;
@@ -304,38 +314,32 @@
     justify-content: center;
   }
 
-  .arrow-down, .arrow-right {
-    font-size: 32px;
-    color: #00a86b;
-    margin-top: 10px;
-  }
-
-  /* Animación rebote */
-  @keyframes bounce {
+  /* Animación vertical para móvil */
+  @keyframes bounceY {
     0%, 100% {
       transform: translateY(0);
     }
     50% {
-      transform: translateY(6px);
+      transform: translateY(5px);
     }
   }
 
-  .animate-bounce {
-    animation: bounce 1.2s infinite;
+  .animate-bounce svg {
+    animation: bounceY 1.3s infinite;
   }
 
-  @keyframes bounce-right {
+  /* Animación horizontal para escritorio */
+  @keyframes bounceX {
     0%, 100% {
       transform: translateX(0);
     }
     50% {
-      transform: translateX(6px);
+      transform: translateX(5px);
     }
   }
 
-  .animate-bounce-desktop {
-    animation: bounce-right 1.2s infinite;
-    font-size: 36px;
+  .animate-bounce-desktop svg {
+    animation: bounceX 1.3s infinite;
   }
 </style>
 
